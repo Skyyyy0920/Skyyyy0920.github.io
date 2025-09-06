@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
+  {% include page__hero.html %}
+{% endif %}
+
+{% if page.url != "/" and site.breadcrumbs %}
+  {% unless paginator %}
+    {% include breadcrumbs.html %}
+  {% endunless %}
+{% endif %}
+
+<style>
+/* Publications页面专用紧凑样式 */
+.publications-archive .archive__item-title {
+  margin-bottom: 0.1em;
+  line-height: 1.2;
+}
+
+.publications-archive .list__item {
+  margin-top: 0;
+  margin-bottom: 0.2em;  /* 目前无法调的更小，无论数值是多少 */
+}
+
+.publications-archive .list__item p {
+  margin: 0 !important;           /* 完全去掉所有margin */
+  padding: 0 !important;          /* 完全去掉所有padding */
+  line-height: 1.3 !important;    /* 较小的行高 */
+}
+
+.publications-archive .page__meta {
+  margin-bottom: 2px;
+  line-height: 0.3;
+}
+</style>
+
+<div id="main" role="main">
+  {% include sidebar.html %}
+
+  <div class="archive publications-archive">
+    {% unless page.header.overlay_color or page.header.overlay_image %}
+      <h1 class="page__title">{{ page.title }}</h1>
+    {% endunless %}
+    {{ content }}
+  </div>
+</div>
