@@ -15,3 +15,5 @@ Before joining UVA, I earned my Bachelor’s degree from Nankai University, wher
 
 ## News
 
+- **Jul. 2025**: One paper is accepted to *ICCV 2025*.
+

@@ -1,0 +1,16 @@
+---
+title: "Private Language Models via Truncated Laplacian Mechanism"
+layout: publication-detail-page
+collection: publications
+category: conferences
+permalink: /publication/DPNLP
+excerpt: "**Tianhao Huang&dagger;**, Tao Yang&dagger;, Ivan Habernal, Lijie Hu, Di Wang&Dagger;"
+date: 2024-11-18
+venue: 'EMNLP'
+pub_type: 'Oral'
+#slidesurl: 'http://skyyyy0920.github.io//files/slides1.pdf'
+paperurl: 'https://aclanthology.org/2024.emnlp-main.231.pdf'
+bibtexurl: 'https://arxiv.org/src/2410.08027'
+---
+
+Recently it has been shown that deep learning models for NLP tasks are prone to attacks that can even reconstruct the verbatim training texts. To prevent privacy leakage, researchers have investigated word-level perturbations, relying on the formal guarantees of differential privacy (DP) in the embedding space. However, many existing approaches either achieve unsatisfactory performance in the high privacy regime when using the Laplacian or Gaussian mechanism, or resort to weaker relaxations of DP that are inferior to the canonical DP in terms of privacy strength. This raises the question of whether a new method for private word embedding can be designed to overcome these limitations. In this paper, we propose a novel private embedding method called the high dimensional truncated Laplacian mechanism. Specifically, we introduce a non-trivial extension of the truncated Laplacian mechanism, which was previously only investigated in one-dimensional space cases. Theoretically, we show that our method has a lower variance compared to the previous private word embedding methods. To further validate its effectiveness, we conduct comprehensive experiments on private embedding and downstream tasks using three datasets. Remarkably, even in the high privacy regime, our approach only incurs a slight decrease in utility compared to the non-private scenario.
