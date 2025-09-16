@@ -38,16 +38,6 @@ redirect_from:
   <div>
     <strong>Alibaba Group</strong> — Research Intern<br>
 
-[//]: # (    <em>Pai Lab</em>)
-
-[//]: # (    <br>)
-
-[//]: # (    - Researched efficient fine-tuning methods for LLMs.)
-
-[//]: # (    <br>)
-
-[//]: # (    - Implemented prototype achieving 2x speedup in inference.)
-
   </div>
   <div style="text-align: right; white-space: nowrap; font-size: 16px;">
     Feb 2025 – Jul 2025
