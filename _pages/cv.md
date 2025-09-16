@@ -32,6 +32,7 @@ redirect_from:
   </div>
 </div>
 
+
 ## Work Experience
 
 <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
@@ -41,5 +42,15 @@ redirect_from:
   </div>
   <div style="text-align: right; white-space: nowrap; font-size: 16px;">
     Feb 2025 – Jul 2025
+  </div>
+</div>
+
+<div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+  <div>
+    <strong>PRADA Lab</strong> — Remote Intern<br>
+    Advisor: Prof. <a href="https://shao3wangdi.github.io/">Di Wang</a>
+  </div>
+  <div style="text-align: right; white-space: nowrap; font-size: 16px;">
+    Apr 2023 – Dec 2024
   </div>
 </div>
