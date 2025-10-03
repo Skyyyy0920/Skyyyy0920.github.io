@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Homepage"
+title                    : "Tianhao Huang's Homepage"
 title_separator          : "-"
 name                     : &name "Tianhao Huang"
 description              : &description "personal description"
