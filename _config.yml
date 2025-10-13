@@ -46,7 +46,7 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "https://github.com/Skyyyy0920"
+  github           : "Skyyyy0920"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
@@ -61,12 +61,12 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : "https://www.linkedin.com/in/tianhao-huang-049234323/"
+  linkedin         : "tianhao-huang-049234323"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
   soundcloud       : # Username
-  steam            : # Username
+  steam            : "76561199162822497"
   telegram         : # URL
   tumblr           : # Username
   twitter          : # Username
@@ -75,7 +75,7 @@ author:
   wikipedia        : # Username
   xing             : # Username
   youtube          : # Username
-  zhihu            : "https://www.zhihu.com/people/nan-quan-45"
+  zhihu            : "nan-quan-45"
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
