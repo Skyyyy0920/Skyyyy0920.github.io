@@ -17,7 +17,6 @@ Before joining UVA, I earned my Bachelor’s degree from Nankai University, wher
 
 ## News
 
-- **May 2026**: Two papers are accepted to *TMLR* ([C2Attack](/publication/C2Attack), [GAGA](/publication/GAGA)).
 - **Apr. 2026**: Three papers are accepted to *ICML 2026* ([AFR-Net](/publication/AFRNet), [GIST](/publication/GIST), [EpiDiff](/publication/EpiDiff)).
 - **Jul. 2025**: One paper is accepted to *ICCV 2025*.
 
