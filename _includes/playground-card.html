@@ -1,0 +1,11 @@
+{% assign c = include.card %}
+<article class="pg-card">
+  <h3>{% if c.url %}<a href="{{ c.url }}">{{ c.title }}</a>{% else %}{{ c.title }}{% endif %}</h3>
+  {% if c.description %}<p>{{ c.description | markdownify | remove: '<p>' | remove: '</p>' }}</p>{% endif %}
+  {% if c.tags %}
+    <div class="pg-chips">{% for t in c.tags %}<span>{{ t }}</span>{% endfor %}</div>
+  {% endif %}
+  {% if c.links %}
+    <div class="pg-card-links">{% for l in c.links %}<a href="{{ l.url }}">{{ l.label }} &#8599;</a>{% endfor %}</div>
+  {% endif %}
+</article>

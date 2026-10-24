@@ -1,0 +1,74 @@
+---
+layout: playground
+title: "Playground"
+permalink: /playground/
+author_profile: true
+---
+
+{% include base_path %}
+{% assign pg = site.data.playground %}
+{% assign n_projects = pg.projects | size %}
+{% assign n_resources = pg.resources | size %}
+{% assign n_posts = pg.posts | size %}
+{% assign n_misc = pg.misc | size %}
+
+<header class="pub-head">
+  <div class="pub-eyebrow">Beyond papers</div>
+  <div class="pub-title-row">
+    <h1 class="page__title pub-title">{{ page.title }}</h1>
+  </div>
+  {% if pg.lede %}<p class="pub-lede">{{ pg.lede }}</p>{% endif %}
+  <nav class="pg-jump" aria-label="Sections">
+    {% if n_projects > 0 %}<a href="#projects">Projects</a>{% endif %}
+    {% if n_resources > 0 %}<a href="#resources">Resources</a>{% endif %}
+    {% if n_posts > 0 %}<a href="#posts">Posts</a>{% endif %}
+    {% if n_misc > 0 %}<a href="#misc">Misc</a>{% endif %}
+  </nav>
+</header>
+
+<div class="pg-content">
+  {% if n_projects > 0 %}
+  <section id="projects" class="pg-sec">
+    <div class="pg-sec-head"><span class="pg-kicker">Built</span><h2>Projects</h2></div>
+    <div class="pg-cards">
+      {% for c in pg.projects %}{% include playground-card.html card=c %}{% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% if n_resources > 0 %}
+  <section id="resources" class="pg-sec">
+    <div class="pg-sec-head"><span class="pg-kicker">Free to reuse</span><h2>Resources</h2></div>
+    <div class="pg-cards">
+      {% for c in pg.resources %}{% include playground-card.html card=c %}{% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% if n_posts > 0 %}
+  <section id="posts" class="pg-sec">
+    <div class="pg-sec-head"><span class="pg-kicker">Writing</span><h2>Posts</h2></div>
+    <div class="pg-posts">
+      {% for p in pg.posts %}
+      <article class="pg-post">
+        <span class="pg-post-date">{{ p.date }}</span>
+        <div class="pg-post-body">
+          {% if p.url %}<a class="pg-post-title" href="{{ p.url }}">{{ p.title }} &#8599;</a>{% else %}<span class="pg-post-title">{{ p.title }}</span>{% endif %}
+          {% if p.where %}<span class="pg-post-where">{{ p.where }}</span>{% endif %}
+          {% if p.summary %}<p class="pg-post-summary">{{ p.summary | markdownify | remove: '<p>' | remove: '</p>' }}</p>{% endif %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% if n_misc > 0 %}
+  <section id="misc" class="pg-sec">
+    <div class="pg-sec-head"><span class="pg-kicker">Off the clock</span><h2>Misc</h2></div>
+    <ul class="pg-misc">
+      {% for m in pg.misc %}<li>{{ m | markdownify | remove: '<p>' | remove: '</p>' }}</li>{% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+</div>

@@ -1,0 +1,105 @@
+# Content of /playground/ (rendered by _pages/playground.html).
+# Edit this file to change the page. Sections with no entries are hidden
+# automatically and lose their jump chip at the top.
+#
+#   projects / resources: title, url, description, tags (list), links (list of {label, url})
+#   posts: date (free text such as "Feb 2025"), title, url, where (platform), summary
+#   misc:  plain strings; inline Markdown (*italics*, [links](url)) works in
+#          description, summary and misc.
+
+lede: "Code releases, things you can reuse, occasional writing, and life off the clock."
+
+projects:
+  - title: "AFR-Net"
+    url: https://github.com/Skyyyy0920/AFR-Net
+    description: "Official code for *Uncovering Latent Communication Patterns in Brain Networks via Adaptive Flow Routing* (ICML 2026): a physics-informed model of how structural connectivity gives rise to functional communication in the brain."
+    tags: [Python, Brain networks, AI for Science]
+    links:
+      - { label: GitHub, url: https://github.com/Skyyyy0920/AFR-Net }
+      - { label: Paper, url: https://arxiv.org/abs/2602.00561 }
+
+  - title: "SSCBM"
+    url: https://github.com/Skyyyy0920/SSCBM
+    description: "Code for *Semi-supervised Concept Bottleneck Models* (ICCV 2025): train concept bottleneck models with only a small fraction of concept labels by pseudo-labelling unlabelled data and aligning it at the concept level."
+    tags: [Python, Concept bottleneck, Interpretability]
+    links:
+      - { label: GitHub, url: https://github.com/Skyyyy0920/SSCBM }
+      - { label: Paper, url: https://arxiv.org/abs/2406.18992 }
+
+  - title: "MTNet"
+    url: https://github.com/Skyyyy0920/MTNet
+    description: "Code for *Learning Time Slot Preferences via Mobility Tree for Next POI Recommendation* (AAAI 2024): the Mobility Tree data structure and the multitask MTNet model for next point-of-interest recommendation."
+    tags: [Python, POI recommendation]
+    links:
+      - { label: GitHub, url: https://github.com/Skyyyy0920/MTNet }
+      - { label: Paper, url: https://ojs.aaai.org/index.php/AAAI/article/view/28697 }
+      - { label: Slides, url: /files/MTNet-slides.pptx }
+
+  - title: "Trlaplace"
+    url: https://github.com/Skyyyy0920/Trlaplace
+    description: "Code for *Private Language Models via Truncated Laplacian Mechanism* (EMNLP 2024, oral): differentially private word embeddings built on a high-dimensional truncated Laplacian mechanism."
+    tags: [Python, Differential privacy, NLP]
+    links:
+      - { label: GitHub, url: https://github.com/Skyyyy0920/Trlaplace }
+      - { label: Paper, url: https://aclanthology.org/2024.emnlp-main.231.pdf }
+
+  - title: "FGAI"
+    url: https://github.com/Skyyyy0920/FGAI
+    description: "Code for *Faithful Interpretation for Graph Neural Networks* (TMLR 2025): keeping attention-based GNN explanations stable under perturbations of the graph."
+    tags: [Python, Graph learning, Interpretability]
+    links:
+      - { label: GitHub, url: https://github.com/Skyyyy0920/FGAI }
+      - { label: Paper, url: https://openreview.net/pdf?id=Y8EspxaksH }
+
+resources:
+  - title: "Awesome Scientific Research Figures"
+    url: https://github.com/Skyyyy0920/Awesome-Scientific-Research-Figures
+    description: "A curated collection of high-quality figures from research papers, sorted into introduction diagrams, method and framework overviews, and experiment visualisations, to draw inspiration from when designing your own."
+    tags: [Figures, Paper writing]
+    links:
+      - { label: GitHub, url: https://github.com/Skyyyy0920/Awesome-Scientific-Research-Figures }
+
+  - title: "Conference posters"
+    url: https://github.com/Skyyyy0920/Conference-Poster
+    description: "The posters for SSCBM (ICCV 2025) and the truncated Laplacian paper (EMNLP 2024) as PDFs, in case the layout is useful for your own."
+    tags: [Poster, PDF]
+    links:
+      - { label: GitHub, url: https://github.com/Skyyyy0920/Conference-Poster }
+      - { label: ICCV 2025 poster, url: https://github.com/Skyyyy0920/Conference-Poster/blob/HEAD/SSCBM_ICCV25.pdf }
+      - { label: EMNLP 2024 poster, url: https://github.com/Skyyyy0920/Conference-Poster/blob/HEAD/DPNLP_EMNLP24.pdf }
+
+  - title: "Plot for research paper"
+    url: https://github.com/Skyyyy0920/Plot-for-research-paper
+    description: "Python plotting scripts I used for paper figures."
+    tags: [Python, Figures]
+    links:
+      - { label: GitHub, url: https://github.com/Skyyyy0920/Plot-for-research-paper }
+
+  - title: "Undergraduate coursework (NKU)"
+    url: https://github.com/Skyyyy0920?tab=repositories
+    description: "Course assignments from Nankai University: a reliable UDP protocol in C++, LeNet-5 built from scratch, a compiler for the compilation-principle course, and data-structure exercises in C."
+    tags: [C++, C, Python, Coursework]
+    links:
+      - { label: Reliable UDP, url: https://github.com/Skyyyy0920/Reliable-UDP-protocol-implementation }
+      - { label: LeNet-5, url: https://github.com/Skyyyy0920/Building-LeNet5-from-Scratch }
+      - { label: Compiler, url: https://github.com/Skyyyy0920/Compilation-Principle }
+      - { label: Data structures, url: https://github.com/Skyyyy0920/Programming-for-learning-Data-Structure }
+
+  - title: "This website"
+    url: https://github.com/Skyyyy0920/Skyyyy0920.github.io
+    description: "Source of this homepage: academicpages (Jekyll) plus a year-grouped, filterable publications page and this playground. Fork it, then edit `_publications/` and `_data/` to make your own."
+    tags: [Jekyll, GitHub Pages, Template]
+    links:
+      - { label: GitHub, url: https://github.com/Skyyyy0920/Skyyyy0920.github.io }
+
+# External writing (X, Zhihu, blog posts elsewhere). Example:
+#   - date: "Feb 2025"
+#     title: "Title of the post"
+#     url: https://example.com/post
+#     where: Zhihu
+#     summary: "One or two sentences on what it is about."
+posts: []
+
+# Life off the clock, one string per bullet. Example:
+#   - "I play badminton and would love a doubles partner in Charlottesville."
+misc: []

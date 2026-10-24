@@ -5,7 +5,8 @@
    _includes/publication-row.html.
    ========================================================================== */
 
-.publications-archive {
+.publications-archive,
+.playground-archive {
   --pub-accent: #{$info-color};
   --pub-accent-dark: #{mix(#000, $info-color, 25%)};
   --pub-ink: var(--global-text-color);
@@ -28,7 +29,8 @@
   }
 }
 
-[data-theme="dark"] .publications-archive {
+[data-theme="dark"] .publications-archive,
+[data-theme="dark"] .playground-archive {
   --pub-accent: #52adc8;
   --pub-accent-dark: #7cc4d8;
   --pub-soft: #a9b1ba;

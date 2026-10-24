@@ -1,0 +1,218 @@
+/* ==========================================================================
+   PLAYGROUND
+   Cards, post rows and misc list for /playground/.
+   Used by _pages/playground.html, _layouts/playground.html and
+   _includes/playground-card.html. Shares the --pub-* colour tokens and the
+   page-header classes defined in _publications.scss.
+   ========================================================================== */
+
+/*
+   Jump links under the page header
+   ========================================================================== */
+
+.pg-jump {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin-top: 0.25em;
+
+  a {
+    padding: 0.5em 1em;
+    border: 1px solid var(--global-dark-border-color);
+    border-radius: 999px;
+    color: var(--pub-ink);
+    font-size: 0.8125em;
+    font-weight: 700;
+    line-height: 1.4;
+    transition: $global-transition;
+
+    &:hover {
+      border-color: var(--pub-accent);
+      color: var(--pub-accent);
+      text-decoration: none;
+    }
+  }
+}
+
+/*
+   Sections
+   ========================================================================== */
+
+.pg-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  padding-top: 0.5em;
+}
+
+.pg-sec {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.pg-sec-head {
+  padding-bottom: 0.6em;
+  border-bottom: 1px solid var(--pub-line);
+
+  h2 {
+    margin: 0;
+    font-size: $type-size-3;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+  }
+}
+
+.pg-kicker {
+  display: block;
+  margin-bottom: 0.3em;
+  font-family: var(--pub-mono);
+  font-size: 0.75em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--pub-soft);
+}
+
+/*
+   Cards (projects, resources)
+   ========================================================================== */
+
+.pg-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(17em, 1fr));
+  gap: 1em;
+}
+
+.pg-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6em;
+  padding: 1.25em 1.35em;
+  border: 1px solid var(--pub-line);
+  border-radius: 10px;
+  background: var(--global-bg-color);
+
+  h3 {
+    margin: 0;
+    font-size: 1.0625em;
+    font-weight: 700;
+    line-height: 1.35;
+
+    a {
+      color: var(--pub-accent-dark);
+    }
+  }
+
+  p {
+    flex: 1;
+    margin: 0;
+    font-size: 0.9375em;
+    line-height: 1.6;
+    color: var(--pub-soft);
+  }
+}
+
+.pg-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4em;
+
+  span {
+    padding: 0.2em 0.55em;
+    border-radius: $border-radius;
+    background: var(--pub-badge-bg);
+    font-family: var(--pub-mono);
+    font-size: 0.75em;
+    color: var(--pub-ink);
+  }
+}
+
+.pg-card-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  font-size: 0.875em;
+  font-weight: 700;
+}
+
+/*
+   Posts
+   ========================================================================== */
+
+.pg-posts {
+  display: flex;
+  flex-direction: column;
+}
+
+.pg-post {
+  display: flex;
+  gap: 1.5em;
+  padding: 1.1em 0.25em;
+  border-bottom: 1px solid var(--pub-line);
+}
+
+.pg-post-date {
+  flex: 0 0 7em;
+  padding-top: 0.2em;
+  font-family: var(--pub-mono);
+  font-size: 0.875em;
+  color: var(--pub-accent);
+}
+
+.pg-post-body {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+
+.pg-post-title {
+  font-size: 1.0625em;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--pub-ink);
+}
+
+.pg-post-where {
+  font-family: var(--pub-mono);
+  font-size: 0.8125em;
+  color: var(--pub-soft);
+}
+
+.pg-post-summary {
+  margin: 0;
+  font-size: 0.9375em;
+  line-height: 1.6;
+  color: var(--pub-soft);
+}
+
+/*
+   Misc
+   ========================================================================== */
+
+.pg-misc {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  margin: 0;
+  padding-left: 1.4em;
+  font-size: 1em;
+  line-height: 1.6;
+  color: var(--pub-ink);
+}
+
+/*
+   Narrow screens
+   ========================================================================== */
+
+@media screen and (max-width: #{$medium - 1px}) {
+  .pg-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .pg-post {
+    flex-direction: column;
+    gap: 0.25em;
+  }
+}
