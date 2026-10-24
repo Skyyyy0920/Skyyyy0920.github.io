@@ -1,13 +1,15 @@
 ---
-title: "Semi-supervised concept bottleneck models"
+title: "Semi-supervised Concept Bottleneck Models"
 layout: publication-detail-page
 collection: publications
 category: conferences
 permalink: /publication/SSCBM
 excerpt: "Lijie Hu&dagger;, **Tianhao Huang&dagger;**, Huanyi Xie, Xilin Gong, Chenyang Ren, Zhengyu Hu, Lu Yu, Ping Ma, Di Wang&Dagger;"
+authors: "Lijie Hu&dagger;, <b>Tianhao Huang&dagger;</b>, Huanyi Xie, Xilin Gong, Chenyang Ren, Zhengyu Hu, Lu Yu, Ping Ma, Di Wang&Dagger;"
 date: 2025-07-24
 venue: 'ICCV'
-#tag: test
+topics: [trust]
+topic_label: 'Concept bottleneck'
 #slidesurl: 'http://skyyyy0920.github.io//files/slides1.pdf'
 paperurl: 'https://arxiv.org/pdf/2406.18992'
 #bibtexurl: 'http://skyyyy0920.github.io//files/bibtex1.bib'

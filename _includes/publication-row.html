@@ -1,0 +1,26 @@
+{% include base_path %}
+{% assign p = include.post %}
+{% assign year = p.date | default: "1900-01-01" | date: "%Y" %}
+<article class="pub-paper" data-topic="{{ p.topics | join: ' ' }}">
+  <div class="pub-meta">
+    <span class="pub-venue">{{ p.venue }} {{ year }}</span>
+    {% if p.topic_label or p.pub_tag %}
+      <span class="pub-tagline">{{ p.topic_label }}{% if p.pub_tag %}{% if p.topic_label %}&nbsp;{% endif %}({{ p.pub_tag | downcase }}){% endif %}</span>
+    {% endif %}
+  </div>
+  <div class="pub-body">
+    {% if p.paperurl %}
+      <a class="pub-paper-title" href="{{ p.paperurl }}">{{ p.title }}</a>
+    {% else %}
+      <span class="pub-paper-title">{{ p.title }}</span>
+    {% endif %}
+    {% if p.authors %}<div class="pub-authors">{{ p.authors }}</div>{% endif %}
+    <div class="pub-links">
+      {% if p.paperurl %}<a href="{{ p.paperurl }}">Paper</a>{% endif %}
+      {% if p.codeurl %}<a href="{{ p.codeurl }}">Code</a>{% endif %}
+      {% if p.slidesurl %}<a href="{{ p.slidesurl }}">Slides</a>{% endif %}
+      {% if p.bibtexurl %}<a href="{{ p.bibtexurl }}">BibTeX</a>{% endif %}
+      <a href="{{ base_path }}{{ p.url }}">Abstract</a>
+    </div>
+  </div>
+</article>

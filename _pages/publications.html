@@ -5,32 +5,70 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
-
 {% include base_path %}
+{% assign pubs = site.publications | sort: "date" | reverse %}
+{% assign years = pubs | group_by_exp: "p", "p.date | date: '%Y'" %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
+<header class="pub-head">
+  <div class="pub-eyebrow">Research output</div>
+  <div class="pub-title-row">
+    <h1 class="page__title pub-title">{{ page.title }}</h1>
+    <div class="pub-ext">
+      {% if site.author.googlescholar %}<a href="{{ site.author.googlescholar }}">Google Scholar &#8599;</a>{% endif %}
+    </div>
+  </div>
+  <p class="pub-lede">Full list in reverse chronological order. <b>&dagger;</b> denotes equal contribution and <b>&Dagger;</b> the corresponding author. For the most up-to-date list, please see Google Scholar.</p>
+
+  <div class="pub-filters" role="group" aria-label="Filter by topic">
+    <button type="button" class="pub-chip on" data-filter="all" aria-pressed="true">All<span>{{ pubs.size }}</span></button>
+    {% for topic in site.data.publication_topics %}
+      {% assign n = 0 %}
+      {% for p in pubs %}
+        {% if p.topics contains topic.key %}{% assign n = n | plus: 1 %}{% endif %}
+      {% endfor %}
+      {% if n > 0 %}
+        <button type="button" class="pub-chip" data-filter="{{ topic.key }}" aria-pressed="false">{{ topic.label }}<span>{{ n }}</span></button>
       {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
     {% endfor %}
+  </div>
+</header>
+
+<div class="pub-years">
+  {% for y in years %}
+    <section class="pub-year">
+      <div class="pub-year-label">{{ y.name }}</div>
+      <div class="pub-papers">
+        {% for p in y.items %}
+          {% include publication-row.html post=p %}
+        {% endfor %}
+      </div>
+    </section>
   {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+</div>
 
-
-
+<script>
+(function () {
+  var chips = document.querySelectorAll('.pub-chip');
+  var years = document.querySelectorAll('.pub-year');
+  chips.forEach(function (chip) {
+    chip.addEventListener('click', function () {
+      var f = chip.getAttribute('data-filter');
+      chips.forEach(function (c) {
+        var on = c === chip;
+        c.classList.toggle('on', on);
+        c.setAttribute('aria-pressed', on ? 'true' : 'false');
+      });
+      years.forEach(function (y) {
+        var shown = 0;
+        y.querySelectorAll('.pub-paper').forEach(function (p) {
+          var topics = (p.getAttribute('data-topic') || '').split(' ');
+          var ok = f === 'all' || topics.indexOf(f) !== -1;
+          p.hidden = !ok;
+          if (ok) { shown++; }
+        });
+        y.hidden = shown === 0;
+      });
+    });
+  });
+})();
+</script>

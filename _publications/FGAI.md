@@ -1,13 +1,15 @@
 ---
-title: "Faithful interpretation for graph neural networks"
+title: "Faithful Interpretation for Graph Neural Networks"
 layout: publication-detail-page
 collection: publications
-category: conferences
+category: manuscripts
 permalink: /publication/FGAI
 excerpt: "Lijie Hu&dagger;, **Tianhao Huang&dagger;**, Lu Yu, Wanyu Lin, Tianhang Zheng, Di Wang&Dagger;"
+authors: "Lijie Hu&dagger;, <b>Tianhao Huang&dagger;</b>, Lu Yu, Wanyu Lin, Tianhang Zheng, Di Wang&Dagger;"
 date: 2025-04-03
 venue: 'TMLR'
-#tag: test
+topics: [trust, graph]
+topic_label: 'Interpretability'
 #slidesurl: 'http://skyyyy0920.github.io//files/slides1.pdf'
 paperurl: 'https://openreview.net/pdf?id=Y8EspxaksH'
 bibtexurl: 'https://jmlr.org/tmlr/papers/bib/Y8EspxaksH.bib'

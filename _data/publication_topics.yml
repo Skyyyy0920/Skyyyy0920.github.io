@@ -1,0 +1,13 @@
+# Topic filters shown as chips on /publications/.
+# Each entry in _publications/ lists the keys it belongs to under `topics:`.
+# Chips that match zero papers are hidden automatically.
+- key: llm
+  label: LLM
+- key: ai4sci
+  label: AI for Science
+- key: graph
+  label: Graph Learning
+- key: trust
+  label: Trustworthy AI
+- key: recsys
+  label: Recommendation

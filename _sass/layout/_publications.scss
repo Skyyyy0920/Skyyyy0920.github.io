@@ -1,0 +1,277 @@
+/* ==========================================================================
+   PUBLICATIONS
+   Year-grouped paper list with topic filter chips.
+   Used by _pages/publications.html, _layouts/publications.html and
+   _includes/publication-row.html.
+   ========================================================================== */
+
+.publications-archive {
+  --pub-accent: #{$info-color};
+  --pub-accent-dark: #{mix(#000, $info-color, 25%)};
+  --pub-ink: var(--global-text-color);
+  --pub-soft: #5f6a75;
+  --pub-line: var(--global-border-color);
+  --pub-badge-bg: #eef2f6;
+  --pub-tag: #8a4b00;
+  --pub-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  [hidden] {
+    display: none !important;
+  }
+}
+
+[data-theme="dark"] .publications-archive {
+  --pub-accent: #52adc8;
+  --pub-accent-dark: #7cc4d8;
+  --pub-soft: #a9b1ba;
+  --pub-badge-bg: #2a3139;
+  --pub-tag: #f0a04b;
+}
+
+/*
+   Page header
+   ========================================================================== */
+
+.pub-head {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+  margin-bottom: 1.5em;
+}
+
+.pub-eyebrow {
+  font-family: var(--pub-mono);
+  font-size: 0.75em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--pub-accent);
+}
+
+.pub-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.pub-title {
+  margin: 0;
+  font-size: $type-size-1;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.08;
+}
+
+.pub-ext {
+  display: flex;
+  gap: 1.25em;
+  padding-bottom: 0.35em;
+  font-size: 0.9375em;
+  font-weight: 600;
+}
+
+.pub-lede {
+  margin: 0;
+  max-width: 52em;
+  font-size: 1em;
+  line-height: 1.7;
+  color: var(--pub-soft);
+}
+
+/*
+   Topic filter chips
+   ========================================================================== */
+
+.pub-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin-top: 0.25em;
+}
+
+.pub-chip {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+  padding: 0.5em 1em;
+  border: 1px solid var(--global-dark-border-color);
+  border-radius: 999px;
+  background: var(--global-bg-color);
+  color: var(--pub-ink);
+  font-family: $global-font-family;
+  font-size: 0.8125em;
+  font-weight: 700;
+  line-height: 1.4;
+  cursor: pointer;
+  transition: $global-transition;
+
+  span {
+    margin-left: 0.35em;
+    font-weight: 500;
+    opacity: 0.7;
+  }
+
+  &:hover {
+    border-color: var(--pub-accent);
+    color: var(--pub-accent);
+  }
+
+  &.on {
+    background: var(--pub-accent);
+    border-color: var(--pub-accent);
+    color: #fff;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--pub-accent-dark);
+    outline-offset: 2px;
+  }
+}
+
+/*
+   Year blocks
+   ========================================================================== */
+
+.pub-years {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.pub-year {
+  display: flex;
+  gap: 1.5em;
+  align-items: flex-start;
+}
+
+.pub-year-label {
+  flex: 0 0 4.5em;
+  padding-top: 1.1em;
+  font-family: var(--pub-mono);
+  font-size: 1.5em;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--pub-accent);
+}
+
+.pub-papers {
+  flex: 1;
+  min-width: 0;
+  border-top: 1px solid var(--pub-line);
+}
+
+/*
+   Paper row
+   ========================================================================== */
+
+.pub-paper {
+  display: flex;
+  gap: 1.25em;
+  padding: 1.1em 0.25em;
+  border-bottom: 1px solid var(--pub-line);
+}
+
+.pub-meta {
+  flex: 0 0 9.5em;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35em;
+}
+
+.pub-venue {
+  max-width: 100%;
+  padding: 0.3em 0.6em;
+  border-radius: $border-radius;
+  background: var(--pub-badge-bg);
+  font-family: var(--pub-mono);
+  font-size: 0.75em;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--pub-ink);
+}
+
+.pub-tagline {
+  font-size: 0.75em;
+  font-weight: 700;
+  color: var(--pub-tag);
+}
+
+.pub-body {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+
+.pub-paper-title {
+  font-size: 1.0625em;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--pub-ink);
+
+  &:hover {
+    color: var(--pub-accent-dark);
+  }
+}
+
+.pub-authors {
+  font-size: 0.9375em;
+  line-height: 1.55;
+  color: var(--pub-soft);
+
+  b,
+  strong {
+    color: var(--pub-ink);
+    font-weight: 700;
+  }
+}
+
+.pub-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin-top: 0.1em;
+  font-size: 0.875em;
+  font-weight: 700;
+}
+
+/*
+   Narrow screens: stack the year label and the meta column
+   ========================================================================== */
+
+@media screen and (max-width: #{$medium - 1px}) {
+  .pub-year {
+    flex-direction: column;
+    gap: 0.25em;
+  }
+
+  .pub-year-label {
+    flex-basis: auto;
+    padding-top: 0;
+  }
+
+  .pub-paper {
+    flex-direction: column;
+    gap: 0.6em;
+  }
+
+  .pub-meta {
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: auto;
+    align-items: center;
+    gap: 0.6em;
+  }
+}

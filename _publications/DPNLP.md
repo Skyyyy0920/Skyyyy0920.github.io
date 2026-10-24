@@ -5,13 +5,15 @@ collection: publications
 category: conferences
 permalink: /publication/DPNLP
 excerpt: "**Tianhao Huang&dagger;**, Tao Yang&dagger;, Ivan Habernal, Lijie Hu, Di Wang&Dagger;"
+authors: "<b>Tianhao Huang&dagger;</b>, Tao Yang&dagger;, Ivan Habernal, Lijie Hu, Di Wang&Dagger;"
 date: 2024-11-18
 venue: 'EMNLP'
-#tag: test
+topics: [llm, trust]
+topic_label: 'Privacy'
 pub_tag: 'Oral'
 #slidesurl: 'http://skyyyy0920.github.io//files/slides1.pdf'
 paperurl: 'https://aclanthology.org/2024.emnlp-main.231.pdf'
-bibtexurl: 'https://arxiv.org/src/2410.08027'
+bibtexurl: 'https://aclanthology.org/2024.emnlp-main.231.bib'
 ---
 **Tianhao Huang&dagger;**, Tao Yang&dagger;, Ivan Habernal, Lijie Hu, Di Wang&Dagger;
 

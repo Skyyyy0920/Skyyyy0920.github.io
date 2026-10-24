@@ -1,16 +1,17 @@
 ---
-title: "Learning time slot preferences via mobility tree for next poi recommendation"
+title: "Learning Time Slot Preferences via Mobility Tree for Next POI Recommendation"
 layout: publication-detail-page
 collection: publications
 category: conferences
 permalink: /publication/MTNet
 excerpt: "**Tianhao Huang&dagger;**, Xuan Pan&dagger;, Xiangrui Cai&Dagger;, Ying Zhang, Xiaojie Yuan"
+authors: "<b>Tianhao Huang&dagger;</b>, Xuan Pan&dagger;, Xiangrui Cai&Dagger;, Ying Zhang, Xiaojie Yuan"
 date: 2024-03-24
 venue: 'AAAI'
-#tag: test
+topics: [recsys]
+topic_label: 'POI recommendation'
 slidesurl: 'http://skyyyy0920.github.io//files/MTNet-slides.pptx'
 paperurl: 'https://ojs.aaai.org/index.php/AAAI/article/view/28697'
-bibtexurl: 'https://arxiv.org/src/2403.12100'
 # citation: 'Tianhao Huang, Xuan Pan, Xiangrui Cai, Ying Zhang, Xiaojie Yuan. "Learning time slot preferences via mobility tree for next poi recommendation." Proceedings of the AAAI Conference on Artificial Intelligence. Vol. 38. No. 8. 2024.'
 ---
 **Tianhao Huang&dagger;**, Xuan Pan&dagger;, Xiangrui Cai&Dagger;, Ying Zhang, Xiaojie Yuan
