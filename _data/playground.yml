@@ -49,48 +49,52 @@ projects:
     tags: [Python, Graph learning, Interpretability]
     links:
       - { label: GitHub, url: https://github.com/Skyyyy0920/FGAI }
-      - { label: Paper, url: https://openreview.net/pdf?id=Y8EspxaksH }
+      - { label: Paper, url: "https://openreview.net/pdf?id=Y8EspxaksH" }
 
-resources:
-  - title: "Awesome Scientific Research Figures"
-    url: https://github.com/Skyyyy0920/Awesome-Scientific-Research-Figures
-    description: "A curated collection of high-quality figures from research papers, sorted into introduction diagrams, method and framework overviews, and experiment visualisations, to draw inspiration from when designing your own."
-    tags: [Figures, Paper writing]
-    links:
-      - { label: GitHub, url: https://github.com/Skyyyy0920/Awesome-Scientific-Research-Figures }
-
-  - title: "Conference posters"
-    url: https://github.com/Skyyyy0920/Conference-Poster
-    description: "The posters for SSCBM (ICCV 2025) and the truncated Laplacian paper (EMNLP 2024) as PDFs, in case the layout is useful for your own."
-    tags: [Poster, PDF]
-    links:
-      - { label: GitHub, url: https://github.com/Skyyyy0920/Conference-Poster }
-      - { label: ICCV 2025 poster, url: https://github.com/Skyyyy0920/Conference-Poster/blob/HEAD/SSCBM_ICCV25.pdf }
-      - { label: EMNLP 2024 poster, url: https://github.com/Skyyyy0920/Conference-Poster/blob/HEAD/DPNLP_EMNLP24.pdf }
-
-  - title: "Plot for research paper"
-    url: https://github.com/Skyyyy0920/Plot-for-research-paper
-    description: "Python plotting scripts I used for paper figures."
-    tags: [Python, Figures]
-    links:
-      - { label: GitHub, url: https://github.com/Skyyyy0920/Plot-for-research-paper }
-
-  - title: "Undergraduate coursework (NKU)"
-    url: https://github.com/Skyyyy0920?tab=repositories
-    description: "Course assignments from Nankai University: a reliable UDP protocol in C++, LeNet-5 built from scratch, a compiler for the compilation-principle course, and data-structure exercises in C."
-    tags: [C++, C, Python, Coursework]
-    links:
-      - { label: Reliable UDP, url: https://github.com/Skyyyy0920/Reliable-UDP-protocol-implementation }
-      - { label: LeNet-5, url: https://github.com/Skyyyy0920/Building-LeNet5-from-Scratch }
-      - { label: Compiler, url: https://github.com/Skyyyy0920/Compilation-Principle }
-      - { label: Data structures, url: https://github.com/Skyyyy0920/Programming-for-learning-Data-Structure }
-
-  - title: "This website"
-    url: https://github.com/Skyyyy0920/Skyyyy0920.github.io
-    description: "Source of this homepage: academicpages (Jekyll) plus a year-grouped, filterable publications page and this playground. Fork it, then edit `_publications/` and `_data/` to make your own."
-    tags: [Jekyll, GitHub Pages, Template]
-    links:
-      - { label: GitHub, url: https://github.com/Skyyyy0920/Skyyyy0920.github.io }
+# Resources is intentionally empty for now, so the section and its jump chip
+# are hidden. The drafted entries below are kept as comments; move them back
+# under `resources:` (and remove the `[]`) to show them again.
+resources: []
+#
+#     - title: "Awesome Scientific Research Figures"
+#       url: https://github.com/Skyyyy0920/Awesome-Scientific-Research-Figures
+#       description: "A curated collection of high-quality figures from research papers, sorted into introduction diagrams, method and framework overviews, and experiment visualisations, to draw inspiration from when designing your own."
+#       tags: [Figures, Paper writing]
+#       links:
+#         - { label: GitHub, url: https://github.com/Skyyyy0920/Awesome-Scientific-Research-Figures }
+#
+#     - title: "Conference posters"
+#       url: https://github.com/Skyyyy0920/Conference-Poster
+#       description: "The posters for SSCBM (ICCV 2025) and the truncated Laplacian paper (EMNLP 2024) as PDFs, in case the layout is useful for your own."
+#       tags: [Poster, PDF]
+#       links:
+#         - { label: GitHub, url: https://github.com/Skyyyy0920/Conference-Poster }
+#         - { label: ICCV 2025 poster, url: https://github.com/Skyyyy0920/Conference-Poster/blob/HEAD/SSCBM_ICCV25.pdf }
+#         - { label: EMNLP 2024 poster, url: https://github.com/Skyyyy0920/Conference-Poster/blob/HEAD/DPNLP_EMNLP24.pdf }
+#
+#     - title: "Plot for research paper"
+#       url: https://github.com/Skyyyy0920/Plot-for-research-paper
+#       description: "Python plotting scripts I used for paper figures."
+#       tags: [Python, Figures]
+#       links:
+#         - { label: GitHub, url: https://github.com/Skyyyy0920/Plot-for-research-paper }
+#
+#     - title: "Undergraduate coursework (NKU)"
+#       url: https://github.com/Skyyyy0920?tab=repositories
+#       description: "Course assignments from Nankai University: a reliable UDP protocol in C++, LeNet-5 built from scratch, a compiler for the compilation-principle course, and data-structure exercises in C."
+#       tags: [C++, C, Python, Coursework]
+#       links:
+#         - { label: Reliable UDP, url: https://github.com/Skyyyy0920/Reliable-UDP-protocol-implementation }
+#         - { label: LeNet-5, url: https://github.com/Skyyyy0920/Building-LeNet5-from-Scratch }
+#         - { label: Compiler, url: https://github.com/Skyyyy0920/Compilation-Principle }
+#         - { label: Data structures, url: https://github.com/Skyyyy0920/Programming-for-learning-Data-Structure }
+#
+#     - title: "This website"
+#       url: https://github.com/Skyyyy0920/Skyyyy0920.github.io
+#       description: "Source of this homepage: academicpages (Jekyll) plus a year-grouped, filterable publications page and this playground. Fork it, then edit `_publications/` and `_data/` to make your own."
+#       tags: [Jekyll, GitHub Pages, Template]
+#       links:
+#         - { label: GitHub, url: https://github.com/Skyyyy0920/Skyyyy0920.github.io }
 
 # External writing (X, Zhihu, blog posts elsewhere). Example:
 #   - date: "Feb 2025"
